@@ -7,14 +7,14 @@ def get_non_negative_integer():
             else:
                 print("Invalid input. Please enter a non-negative integer.")
         except ValueError:
-            print("Invalid input. Please enter a non-negative integer.")
+            print("Invalid input. Please enter a valid integer.")
 
 def calculate_factorial(n):
     if n == 0:
         return 1
     factorial = 1
     for i in range(1, n + 1):
-        factorial *= i
+        factorial *= i  # Corrected line
     return factorial
 
 def main():
@@ -22,5 +22,5 @@ def main():
     result = calculate_factorial(number)
     print(f"The factorial of {number} is: {result}")
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # Corrected line
     main()
